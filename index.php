@@ -58,7 +58,7 @@ $json = json_encode($values, JSON_UNESCAPED_UNICODE);
   </style>
 </head>
 
-<body id="main">a
+<body id="main">
   <!-- Head[Start] -->
   <header>
     <nav class="navbar navbar-default">
