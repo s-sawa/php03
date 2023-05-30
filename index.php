@@ -101,6 +101,7 @@ $json = json_encode($values, JSON_UNESCAPED_UNICODE);
           <img src="./img/deletebtn.svg" alt="" onclick='getId(<?= $v["id"] ?>)' width="25px" class="pointer-cursor">
         </div>
         <div>
+          <img src="<?= $v["img_path"] ?>" alt="" width="100px">
         </div>
         <hr>
       <?php } ?>
@@ -146,7 +147,6 @@ $json = json_encode($values, JSON_UNESCAPED_UNICODE);
     function deleteData(id) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', 'http://localhost/task/php03/delete.php?id=' + id, true);
-      // xhr.open('GET', 'https://swshgeek.sakura.ne.jp//php03/delete.php?id=' + id, true);
       xhr.onload = function() {
         if (xhr.status === 200) {
           Swal.fire(

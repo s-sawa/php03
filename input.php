@@ -28,7 +28,7 @@
   <!-- Head[End] -->
 
   <!-- Main[Start] -->
-  <form method="post" action="insert.php">
+  <form method="post" action="insert.php" enctype="multipart/form-data">
     <div class="jumbotron">
       <fieldset>
         <legend>食べログ</legend>
@@ -51,7 +51,7 @@
           <input type="radio" id="rate-5" name="rate" value="☆☆☆☆☆"><label for="rate-5">⭐️5</label>
         </label><br>
         <label>感想<textArea name="impression" rows="4" cols="40" required></textArea></label><br>
-
+        <input type="file" name="upload_image"><br>
         <input type="submit" value="送信">
       </fieldset>
       <a href="./index.php">一覧</a>
