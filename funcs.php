@@ -20,6 +20,7 @@ function db_conn()
         $db_pw   = "";          //パスワード：XAMPPはパスワード無し or MAMPはパスワード”root”に修正してください。
         $db_host = "localhost"; //DBホスト
         return new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
+        // return $pdo;
     } catch (PDOException $e) {
         exit('DB Connection Error:' . $e->getMessage());
     }

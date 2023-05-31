@@ -21,13 +21,16 @@
   <header>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand" href="index.php">データ一覧</a></div>
+        <div class="navbar-header"><a class="navbar-brand" href="">データ登録</a></div>
       </div>
     </nav>
   </header>
   <!-- Head[End] -->
 
   <!-- Main[Start] -->
+  <p><a href="index.php">TOP</a></p>
+  <p><a href="search_input.php">検索</a></p>
+
   <form method="post" action="insert.php" enctype="multipart/form-data">
     <div class="jumbotron">
       <fieldset>
@@ -54,7 +57,6 @@
         <input type="file" name="upload_image"><br>
         <input type="submit" value="送信">
       </fieldset>
-      <a href="./index.php">一覧</a>
     </div>
   </form>
   <!-- Main[End] -->

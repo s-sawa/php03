@@ -20,6 +20,8 @@ if (!empty($_FILES)) {
   } else {
     $MSG = '画像を選択してください';
   }
+} else if (empty($_FILES)) {
+  $img_path = "";
 }
 
 //2. DB接続します
@@ -47,5 +49,5 @@ if ($status == false) {
   sql_error($stmt); //関数実行
 } else {
   //５．select.phpへリダイレクト
-  redirect("index.php");
+  redirect("select.php");
 }

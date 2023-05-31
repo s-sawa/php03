@@ -29,6 +29,6 @@ $status = $stmt->execute();
 if($status==false) {
   sql_error($stmt); //関数実行 
 }else {
-  redirect("index.php");
+  redirect("select.php");
 }
 ?>

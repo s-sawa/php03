@@ -41,7 +41,7 @@ if ($status == false) {
     <header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="index.php">データ編集</a></div>
+                <div class="navbar-header"><a class="navbar-brand" href="select.php">データ編集</a></div>
             </div>
         </nav>
     </header>
@@ -73,7 +73,7 @@ if ($status == false) {
                 <input type="hidden" name="id" value="<?= $row["id"] ?>">
                 <input type="submit" value="送信" onclick="send()">
             </fieldset>
-            <a href="./index.php">結果を見る</a>
+            <a href="./select.php">結果を見る</a>
         </div>
     </form>
     <!-- Main[End] -->
